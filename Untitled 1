@@ -1,0 +1,81 @@
+Use interfaces or objects that will be used often. 
+Create a test plan according to BDD that will dictate the project. 
+Try and use less popular data structs for extra points?
+Its a simple program, but how would a SENIOR engineer do it?
+
+Make it a powerpoint with screenshots and code samples to help you and other stay on track.
+Intro:
+	The problem
+	My initial approach
+		TDD/
+		BDD instead since I was not allowed a testing framework
+	Welcome to 'Taskit'?
+	inital considerations
+		no external libs
+		error handling
+		input 'sanitization'
+		got the email on a friday but the wheels were already turning
+		I love and thrive with a challenge
+		Ensure all errors are properly handled
+		I chose to use yes/No confirmation to fail faster
+	Modified BDD
+		Should exit cleanly
+		Tasks should be saved when program is closed
+		All described functions
+			Adding tasks (title, description, due date AND STATUS)
+			Listing tasks (all, only completed, or only pending)
+			Updating existing tasks - Marking tasks as completed
+			Deleting tasks
+		When trying to delete from an empty list errors should be handled
+		When updating a task and an out of bounds index is given it should be handled and go back
+		
+		
+		
+		
+TODO:
+	Create more sophisticated update logic (update title, desc, etc...)
+	Advanced logic that states the list is empty when asking to list an empty list
+	Change code layout to operate more through taskit and call the methods of task manager.
+	
+	Sanitized inputs may not be necessary. JUSTIFY	
+			There is not a database or API to manipulate with bad input
+	Surround user input with try/catch
+	Comment code. Share what the function/ purpose is at the top
+		
+	We have conditional logic for each method, is there a way to condense it into a multi-use method?	
+		We could pass along the list of options so the method knows the context
+			This approach requires program to interpret the list so probably not worth it
+		
+
+		
+		
+Functionality: - Implement a menu-driven console application that supports:
+Adding tasks (title, description, due date AND STATUS)
+	- task object
+Listing tasks (all, only completed, or only pending)
+	- done with menu print statements and logic to add tasks to an arraylist, then save to a file
+Updating existing tasks - Marking tasks as completed
+	- call the list tasks list and ask for a number and then update that object to completed/not
+Deleting tasks
+	- list tasks as print statements in a method then delete the index of the chosen one.
+Store tasks in memory using Java collections (List / Map).
+Persist tasks between runs by saving them to a file (e.g., CSV or simple text format).
+Load tasks from the file on application startup.
+Provide clear console output for all operations.
+
+
+
+Please prepare a presentation on the below topic(s). Please reach out to your recruiter, Mary Catherine Collins, with any questions.
+
+Coding Assignment
+Objective Build a simple command-line Task Manager application using Java 21+ (core Java only) that demonstrates data persistence, collections, and user interaction through the console.
+
+Requirements
+
+Technical Stack: - Java 21 or higher - Core Java only (no external frameworks or libraries) - File I/O (java.io / java.nio.file) for persistence - Eclipse IDE preferred (but not required)
+
+Functionality: - Implement a menu-driven console application that supports: - Adding tasks (title, description, due date) - Listing tasks (all, only completed, or only pending) - Updating existing tasks - Marking tasks as completed - Deleting tasks - Store tasks in memory using Java collections (List / Map). - Persist tasks between runs by saving them to a file (e.g., CSV or simple text format). - Load tasks from the file on application startup. - Provide clear console output for all operations.
+
+Deliverables 1. A public Git repository (e.g., GitHub) containing: - All source code - A README.md file with setup instructions, assumptions, and how to run/test the app 2. Submit the repository link at least one day before your interview.
+
+Interview Expectations You will have 10–15 minutes to: - Present your solution - Walk through your design and implementation (how tasks are modeled, stored, and persisted) - Discuss any challenges or trade-offs (e.g., why text files vs. database, choice of collections) - Answer questions about your approach
